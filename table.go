@@ -8532,7 +8532,6 @@ confusableTable[0x29c] = []rune{0x68}
 confusableTable[0x397] = []rune{0x48}
 confusableTable[0x41d] = []rune{0x48}
 confusableTable[0x4bb] = []rune{0x68}
-confusableTable[0x6c] = []rune{0x69}
 confusableTable[0x269] = []rune{0x69}
 confusableTable[0x399] = []rune{0x49}
 confusableTable[0x406] = []rune{0x49}
