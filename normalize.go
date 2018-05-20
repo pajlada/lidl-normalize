@@ -26,10 +26,8 @@ func stripAccents(s string) (string, error) {
 
 // Normalize hehe
 func Normalize(s string) (string, error) {
-	var err error
-	s, err = stripAccents(s)
-	if err != nil {
-		return "", err
+	if s == "" {
+		return s, nil
 	}
 
 	for i, w := 0, 0; i < len(s); i += w {
@@ -42,6 +40,12 @@ func Normalize(s string) (string, error) {
 		} else {
 			w = width
 		}
+	}
+
+	var err error
+	s, err = stripAccents(s)
+	if err != nil {
+		return "", err
 	}
 
 	return s, nil
