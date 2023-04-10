@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.1.1
+
 - Move tests to actual tests
 - Use `runes.Remove` instead of deprecated `transform.RemoveFunc`
 
