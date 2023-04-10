@@ -4,18 +4,15 @@ import (
 	"unicode"
 	"unicode/utf8"
 
+	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
 )
 
-func isMn(r rune) bool {
-	return unicode.Is(unicode.Mn, r) // Mn: nonspacing marks
-}
-
 func stripAccents(s string) (string, error) {
 	b := make([]byte, len(s))
 
-	t := transform.Chain(norm.NFD, transform.RemoveFunc(isMn), norm.NFC)
+	t := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 	nDst, _, err := t.Transform(b, []byte(s), true)
 	if err != nil {
 		return "", err
