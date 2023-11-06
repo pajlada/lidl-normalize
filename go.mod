@@ -3,7 +3,7 @@ module github.com/pajlada/lidl-normalize
 go 1.19
 
 require (
-	golang.org/x/text v0.13.0
+	golang.org/x/text v0.14.0
 	honnef.co/go/tools v0.4.6
 )
 
