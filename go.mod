@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	golang.org/x/text v0.14.0
-	honnef.co/go/tools v0.4.6
+	honnef.co/go/tools v0.4.7
 )
 
 require (
