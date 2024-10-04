@@ -5,7 +5,7 @@ go 1.22.1
 toolchain go1.23.0
 
 require (
-	golang.org/x/text v0.18.0
+	golang.org/x/text v0.19.0
 	honnef.co/go/tools v0.5.1
 )
 
