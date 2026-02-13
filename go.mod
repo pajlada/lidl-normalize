@@ -1,12 +1,10 @@
 module github.com/pajlada/lidl-normalize
 
-go 1.24.0
-
-toolchain go1.24.2
+go 1.25.0
 
 require (
 	golang.org/x/text v0.33.0
-	honnef.co/go/tools v0.6.1
+	honnef.co/go/tools v0.7.0
 )
 
 require (
@@ -14,6 +12,5 @@ require (
 	golang.org/x/exp/typeparams v0.0.0-20240808152545-0cdaa3abc0fa // indirect
 	golang.org/x/mod v0.31.0 // indirect
 	golang.org/x/sync v0.19.0 // indirect
-	golang.org/x/tools v0.40.0 // indirect
-	golang.org/x/tools/go/expect v0.1.1-deprecated // indirect
+	golang.org/x/tools v0.40.1-0.20260108161641-ca281cf95054 // indirect
 )
