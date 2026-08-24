@@ -22,8 +22,5 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
 
-      - name: Install linter
-        run: go install honnef.co/go/tools/cmd/staticcheck
-
       - name: Lint
-        run: staticcheck ./...
+        run: go tool staticcheck ./...
