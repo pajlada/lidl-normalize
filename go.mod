@@ -1,10 +1,10 @@
 module github.com/pajlada/lidl-normalize
 
-go 1.25.0
+go 1.26.0
 
 require (
 	golang.org/x/text v0.41.0
-	honnef.co/go/tools v0.7.0
+	honnef.co/go/tools v0.8.1
 )
 
 require (
