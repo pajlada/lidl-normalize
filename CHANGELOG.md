@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v1.0.1
+
+- Update dependencies.
+
 ## v1.0.0
 
 - Update minimum Go version to v1.20. (#12)
